@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/kabilan resume.pdf";
 import Skills from "../../Components/Skills";
 import { resume } from "../../data";
-import ResumeItem from "../../Components/ResumeItem";
+import ResumeItem from "../../Components/Resumeitem";
 import "./About.css"
 
 
