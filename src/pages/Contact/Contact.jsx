@@ -75,16 +75,16 @@ const Contact = () => {
                     </div>
 
                     <div className="contact__socials">
-                        <a href="" className="contact__social-link">
+                        <a href="https://www.linkedin.com/in/kabilan-b-200a8a324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="contact__social-link">
                             <FaLinkedinIn />
                         </a>
-                        <a href="" className="contact__social-link">
+                        <a href="https://github.com/kabilan345" className="contact__social-link">
                             <FaGithub />
                         </a>
-                        <a href="" className="contact__social-link">
+                        <a href="https://www.instagram.com/mr__kabi__chan" className="contact__social-link">
                             <FaInstagram />
                         </a>
-                        <a href="" className="contact__social-link">
+                        <a href="https://x.com/mr_kabi_chan?t=YCjHawoSQsJleU9w_z9SWg&s=09" className="contact__social-link">
                             <FaTwitter />
                         </a>
                     </div>
