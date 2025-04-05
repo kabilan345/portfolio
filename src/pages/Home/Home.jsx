@@ -21,7 +21,7 @@ const Home = () => {
                     </p>
 
                     <Link to='/about' className="button">
-                      more about me <span className="button__icon">
+                    more about me <span className="button__icon">
                         <FaArrowRight/>
                         </span>
                     </Link>

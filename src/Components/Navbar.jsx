@@ -19,7 +19,7 @@ const Navbar = () => {
                                 onClick={() => setShowMenu(!ShowMenu)}
                             >
                                 {icon}
-                                  <h3 className="nav__name">{name}</h3>
+                                <h3 className="nav__name">{name}</h3>
                                 </NavLink>
                             </li>
                         );
