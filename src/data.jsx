@@ -14,7 +14,8 @@ import Work2 from './assets/project-2.png';
 import Work3 from './assets/project-3.png';
 import Work4 from './assets/project-4.png';
 import Work5 from './assets/project-5.png';
-import Work6 from './assets/project-6.jpg';
+import Work6 from './assets/project-6.png';
+import Work7 from './assets/project-7.jpg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -103,14 +104,14 @@ export const personalInfo = [
   {
     id: 8,
     title: 'Email : ',
-    description: 'kabilan.b2**3@mail.com',
+    description: 'kabilan.b2003@mail.com',
   },
 
-  {
-    id: 9,
-    title: 'Linkdin : ',
-    description: 'kabilan.in',
-  },
+  // {
+  //   id: 9,
+  //   title: 'Linkdin : ',
+  //   description: 'kabilan.in',
+  // },
 
   {
     id: 10,
@@ -122,7 +123,7 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: '-',
+    no: 'Fresher',
     title: 'Years of <br /> Experience',
   },
 
@@ -132,17 +133,17 @@ export const stats = [
     title: 'Completed <br /> Projects',
   },
 
-  {
-    id: 3,
-    no: '-',
-    title: 'Happy <br /> Customers',
-  },
+  // {
+  //   id: 3,
+  //   no: '-',
+  //   title: 'Happy <br /> Customers',
+  // },
 
-  {
-    id: 4,
-    no: '-',
-    title: ' Awards <br /> Won',
-  },
+  // {
+  //   id: 4,
+  //   no: '-',
+  //   title: ' Awards <br /> Won',
+  // },
 ];
 
 export const resume = [
@@ -151,26 +152,26 @@ export const resume = [
     category: 'experience',
     icon: <FaBriefcase />,
     year: '8/7/24 - 8/8/24',
-    title: 'Fullstack development <span> Offline Intern </span>',
-    desc: 'Participated in an offline Intership In Bics Global IT company,Amattur chennai.',
+    title: 'Full Stack Developer Intern <span>BICS GLOBAL IT Company</span>',
+    desc: 'Built responsive web applications using React.js for frontend and Node js for backend and integrated Firebase for authentication and data storage.',
   },
 
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '3/3/24 - 3/4/24',
-    title: 'Fullstack development <span> Online Intern </span>',
-    desc: 'Participated in an online intership in Novi Tech R&D private limited.',
+    year: '15/2/24 - 20/3/24',
+    title: 'Full Stack Developer Course <span> Novitech R&D </span> ',
+    desc: 'full stack development online course in Novitech R and D private limited company',
   },
 
   {
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '1/4/21 - 1/6/21',
+    year: '12/7/21 - 12/9/21',
     title: 'Microsoft Office <span> Offline Course </span>',
-    desc: 'I learned Ms-Word,Excel,Powerpoint in CSC couching center',
+    desc: 'Completed training in MS Word, Excel, and PowerPoint at CSC Coaching Center',
   },
 
   {
@@ -178,8 +179,8 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '8/2021 - 8/2025',
-    title: 'Engineering Degree <span> CGPA : 9.1 </span>',
-    desc: 'Adhiparasakthi College Of Engineering,kalavai and studying Bachelor of Engineering in Computer Science',
+    title: 'Computer Science Engineering<span> CGPA : 8.6 </span>',
+    desc: 'Adhiparasakthi College Of Engineering,kalavai.',
   },
 
   {
@@ -188,7 +189,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '3/2021',
     title: 'Higher Secondary <span> Percentage: 87.5% </span>',
-    desc: 'I have completed my Higher Secondary in Vedanikethan Matric Higher Secondary School.',
+    desc: 'Vedanikethan Matric Higher Secondary School.',
   },
 
   {
@@ -197,50 +198,50 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '3/2019',
     title: 'Secondary <span> Percentage: 85.4% </span>',
-    desc: 'I have completed my Secondary in Vedanikethan Matric Higher Secondary School.',
+    desc: 'Vedanikethan Matric Higher Secondary School.',
   },
 ];
 
 export const skills = [
   {
     id: 1,
-    title: 'Html',
-    percentage: '95',
+    title: 'Java',
+    percentage: '80',
   },
 
   {
     id: 2,
-    title: 'Css',
+    title: 'HTML',
     percentage: '80',
   },
 
   {
     id: 3,
-    title: 'Javascript',
+    title: 'CSS',
     percentage: '70',
   },
 
   {
     id: 4,
-    title: 'Reactjs',
+    title: 'Javascript',
     percentage: '65',
   },
 
   {
     id: 5,
-    title: 'Nodejs',
-    percentage: '50',
+    title: 'SQL',
+    percentage: '95',
   },
 
   {
     id: 6,
-    title: 'python',
+    title: 'Reactjs',
     percentage: '65',
   },
 
   {
     id: 7,
-    title: 'Java',
+    title: 'Python',
     percentage: '55',
   },
 
@@ -255,6 +256,34 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
+    title: 'E-commerce Website',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Web Technology',
+      },
+      // {
+      //   icon: <FiUser />,
+      //   title: 'Client : ',
+      //   desc: 'Dribble',
+      // },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Reactjs, Tailwind css, Firebse console, Firebase database',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://kabil-shoes.vercel.app/',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    img: Work2,
     title: 'BookSky App',
     details: [
       {
@@ -272,17 +301,17 @@ export const portfolio = [
         title: 'Language : ',
         desc: 'Html,Css,Js',
       },
-      // {
-      //   icon: <FiExternalLink />,
-      //   title: 'Preview : ',
-      //   desc: 'www.dribble.com',
-      // },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://booksky-silk.vercel.app/',
+      },
     ],
   },
 
   {
-    id: 2,
-    img: Work2,
+    id: 3,
+    img: Work3,
     title: 'Login Page',
     details: [
       {
@@ -309,8 +338,8 @@ export const portfolio = [
   },
 
   {
-    id: 3,
-    img: Work3,
+    id: 4,
+    img: Work4,
     title: 'Portfolio website',
     details: [
       {
@@ -337,8 +366,8 @@ export const portfolio = [
   },
 
   {
-    id: 4,
-    img: Work4,
+    id: 5,
+    img: Work5,
     title: 'Portfolio website',
     details: [
       {
@@ -365,8 +394,8 @@ export const portfolio = [
   },
 
   {
-    id: 5,
-    img: Work5,
+    id: 6,
+    img: Work6,
     title: 'Netflix clone app',
     details: [
       {
@@ -389,8 +418,8 @@ export const portfolio = [
   },
 
   {
-    id: 6,
-    img: Work6,
+    id: 7,
+    img: Work7,
     title: 'airpodes design',
     details: [
       {
