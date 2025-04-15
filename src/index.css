@@ -139,8 +139,10 @@
     .home {
         grid-template-columns: 1fr;
         justify-items: center;
-        row-gap: 30px;
-        padding: 40px 20px;
+        row-gap: 20px; /* Reduced from 30px */
+        padding: 30px 20px; /* Adjusted padding */
+        height: auto;
+        min-height: 100vh;
     }
 
     .color__block {
@@ -148,21 +150,26 @@
     }
 
     .home__img {
-        width: 250px;
-        height: 250px;
+        width: 200px; /* Slightly smaller */
+        height: 200px;
         border-radius: 50%;
         margin-top: 0;
+        margin-bottom: 10px; /* Added to control space below image */
     }
+
 
     .home__content {
         max-width: 100%;
         text-align: center;
-        margin-bottom: 0;
+        margin-top: 0; /* Remove any default margin */
+        padding-top: 0; /* Remove any default padding */
     }
 
     .home__title {
         padding-left: 0;
         font-size: var(--h1-font-size);
+        margin-top: 10px; /* Added to control space above title */
+        margin-bottom: 15px; /* Added to control space below title */
     }
 
     .home__title::before {
@@ -174,12 +181,17 @@
     }
 
     .home__description {
-        margin-block: 16px 24px;
+        margin-block: 10px 20px; /* Reduced from 16px 32px */
         line-height: 1.8;
+        padding: 0 10px; /* Add small side padding */
     }
 
     .container {
         max-width: 540px;
+    }
+
+    .button {
+        margin-top: 10px; /* Control space above button */
     }
 
     /* About */
@@ -254,12 +266,25 @@
 @media screen and (max-width: 576px) {
     /* Home */
     .home {
-        padding: 30px 15px;
+        padding: 20px 15px;
+        row-gap: 15px; /* Even smaller gap */
     }
 
     .home__img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+        margin-bottom: 5px; /* Smaller space below image */
+    }
+
+    .home__title {
+        font-size: var(--h2-font-size);
+        margin-bottom: 10px;
+    }
+
+    .home__description {
+        font-size: var(--small-font-size);
+        margin-block: 8px 15px;
+        line-height: 1.7;
     }
 
     /* About */
@@ -298,7 +323,7 @@
     }
 
     .contact__button-icon {
-        line-height: 50px;
+        line-height: 60px;
     }
 
     /* Portfolio */
@@ -340,12 +365,27 @@
         text-align: center;
         font-size: var(--small-font-size);
     }
+
+    .modal__close{
+        right: 5px;
+        top: 10px;
+    }
 }
 
 @media screen and (max-width: 350px) {
     /* Home */
     .home__title span {
         display: inline;
+    }
+
+    .home {
+        padding: 15px 10px;
+        row-gap: 10px;
+    }
+
+    .home__img {
+        width: 150px;
+        height: 150px;
     }
 
     .home__title {

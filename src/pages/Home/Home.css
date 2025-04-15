@@ -14,12 +14,16 @@
     z-index: 1;
 }
 
+.home__content {
+    position: relative;
+    z-index: 2;
+}
+
 .home__data {
     max-width: 600px;
     margin-inline: auto;
     padding-top: 20px;
 }
-
 .home__title {
     position: relative;
     font-size: var(--h1-font-size);
