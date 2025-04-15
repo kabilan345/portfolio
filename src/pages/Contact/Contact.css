@@ -1,35 +1,36 @@
-.contact__container{
+/* ===== Contact Component Styles ===== */
+.contact__container {
     grid-template-columns: 4fr 8fr;
 }
 
-.contact__title{
+.contact__title {
     font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
     margin-bottom: 1rem;
 }
 
-.contact__description{
+.contact__description {
     font-size: var(--small-font-size);
     line-height: 1.6;
 }
 
 .contact__description,
-.contact__info .info__item{
+.contact__info .info__item {
     margin-bottom: 20px;
 }
 
-.contact__info .info__item{
+.contact__info .info__item {
     display: flex;
     align-items: center;
     column-gap: 16px;
 }
 
-.contact__info .info__icon{
+.contact__info .info__icon {
     color: var(--first-color);
     font-size: var(--h2-font-size);
 }
 
-.contact__info .info__title{
+.contact__info .info__title {
     font-size: var(--small-font-size);
 }
 
@@ -39,12 +40,12 @@
     font-weight: var(--weight-500);
 }
 
-.contact__socials{
+.contact__socials {
     display: flex;
     column-gap: 16px;
 }
 
-.contact__social-link{
+.contact__social-link {
     background-color: var(--container-color);
     color: var(--title-color);
     width: 40px;
@@ -55,12 +56,12 @@
     transition: all 0.3s ease;
 }
 
-.contact__social-link:hover{
+.contact__social-link:hover {
     background-color: var(--first-color);
     color: var(--text-white);
 }
 
-.form__input-group{
+.form__input-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -70,7 +71,7 @@
     margin-bottom: 30px;
 }
 
-.form__control{
+.form__control {
     border: 1px solid var(--container-color);
     background-color: var(--container-color);
     color: var(--title-color);
@@ -81,7 +82,7 @@
     transition: all 0.3s ease;
 }
 
-.form__control:focus{
+.form__control:focus {
     border-color: var(--first-color);
 }
 

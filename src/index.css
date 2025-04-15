@@ -1,283 +1,393 @@
+/* ===== Media Queries ===== */
 @media screen and (max-width: 1400px) {
     .container {
         max-width: calc(100% - 180px);
     }
 }
 
-@media scree and (max-width: 1200px){
-    .grid{
+@media screen and (max-width: 1200px) {
+    .grid {
         gap: 20px;
     }
 
-    .home__data{
+    /* Home */
+    .home__data {
         padding-right: 40px;
     }
 
-    .home__title{
+    .home__title {
         font-size: var(--big-font-size);
     }
 
-    .home__description{
+    .home__description {
         font-size: var(--small-font-size);
     }
 
-    .status__title{
-        padding-left: 35px;
+    /* About */
+    .about__container,
+    .info__list,
+    .stats,
+    .resume__container {
+        gap: 20px;
     }
 
-    .status__title::before{
-        width: 22px;
+    .stats__box {
+        padding: 15px 20px 20px;
     }
 
-    .skills__container{
-        row-gap: 32px;
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .progress__circle{
-        width: 100px;
-        height: 100px;
-    }
-
-    .skills__title{
-        margin-top: 20px;
-    }
-
-    .resume__icon{
-        width: 36px;
-        height: 36px;
-        line-height: 38px;
-    }
-
-    .resume__item{
-        padding-left: 55px;
-    }
-
-    .portfolio__modal-content{
-        max-width: 600px;
-    }
-
-    .modal__close{
-        width: 40px;
-        height: 40px;
-    }
-
-    .form__input-group{
+    /* Portfolio */
+    .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 24px;
+        gap: 25px;
     }
 
-    .form__input-group .form__input-div:last-child{
-        grid-column: 1/-1;
-    }
-
-    .form__input-div{
-        margin-bottom: 24px;
+    .portfolio__img {
+        height: 200px;
     }
 }
 
-@media scree and (max-width: 1024px){
-    .container{
+@media screen and (max-width: 1024px) {
+    .container {
         max-width: 720px;
     }
 
-    .home{
+    /* Home */
+    .home {
         padding: 20px;
         grid-template-columns: 5fr 7fr;
+        height: auto;
+        min-height: 100vh;
     }
 
-    .home__data{
+    .home__data {
         padding-right: 0;
     }
 
-    .section{
+    .section {
         padding-block: 50px;
     }
 
-    .section__title{
+    .section__title {
         margin-bottom: 40px;
     }
 
+    /* About */
     .about__container,
-    .resume__container,
-    .contact__container{
+    .info__list,
+    .stats,
+    .resume__container {
         grid-template-columns: 1fr;
     }
 
-    .about__container{
+    .stats__box {
+        padding: 20px 25px;
+    }
+
+    .separator {
+        max-width: 60%;
+        margin: 50px auto 40px;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    /* Contact */
+    .contact__container {
+        grid-template-columns: 1fr;
         row-gap: 40px;
     }
 
-    .subtitle__center{
-        margin-bottom: 45px;
+    .contact__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
-    .skills__container{
-        grid-template-columns: repeat(3,1fr);
+    .form__input-group {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .resume__container{
-        row-gap: 45px;
+    .form__input-group .form__input-div:last-child {
+        grid-column: 1/-1;
     }
 
-    .resume__item:not(:last-child){
-        margin-bottom: 45px;
+    /* Portfolio */
+    .portfolio__modal-contant {
+        padding: 25px;
     }
 
-    .separator{
-        margin: 65px auto 50px;
+    .modal__list {
+        grid-template-columns: 1fr;
     }
 
-    .portfolio__container{
-        grid-template-columns: repeat(2,1fr);
-    } 
-
-    .contact__container{
-        row-gap: 48px;
+    .modal__img {
+        height: 300px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .home{
+    /* Home */
+    .home {
         grid-template-columns: 1fr;
         justify-items: center;
-        row-gap: 10px;
+        row-gap: 30px;
+        padding: 40px 20px;
     }
 
-    .color__block{
+    .color__block {
         display: none;
     }
 
-    .home__img{
-        width: 270px;
-        height: 270px;
+    .home__img {
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
-        margin-top: auto;
+        margin-top: 0;
     }
 
-    .home__content{
-        max-width: 500px;
+    .home__content {
+        max-width: 100%;
         text-align: center;
-        margin-bottom: auto;
+        margin-bottom: 0;
     }
 
-    .home__title{
+    .home__title {
         padding-left: 0;
-    }
-
-    .home__title::before{
-        all: unset;
-    }
-
-    .home__title span{
-        display: block;
-    }
-
-    .container{
-        max-width: 540px;
-    }
-
-    .portfolio__modal-content{
-        padding: 25px 20px;
-    }
-
-    .modal__close{
-        top: -9%;
-        right: 0;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .nav__toggle{
-        top: 20px;
-        right: 15px;
-    }
-
-    .nav__link{
-        column-gap: 20px;
-    }
-
-    .nav__icon,
-    .nav__name{
-        font-size: var(--h3-font-size);
-    }
-
-    .skills__container{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .portfolio__container{
-        grid-template-columns: 1fr;
-    }
-
-    .modal__list{
-        grid-template-columns: 1fr;
-    }
-
-    .modal__imag{
-        height: 300px;
-    }
-
-    .form__input-group{
-        grid-template-columns: 1fr;
-    }
-
-    .theme__img{
-        width: 25px;
-    }
-
-    .style__switcher-toggler,
-    .theme__togller{
-        width: 40px;
-        height: 40px;
-    }
-
-    .style__switcher-toggler{
-        top: 15%;
-    }
-
-    .theme__toggler{
-        bottom: 15%;
-    }
-
-    .style__switcher-close{
-        top: 5%;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .home__img{
-        display: none;
-    }
-
-    .home__content{
-        margin-block: auto;
-        text-align: left;
-    }
-
-    .home__title{
         font-size: var(--h1-font-size);
     }
 
-    .home__description{
-        text-align: justify;
+    .home__title::before {
+        all: unset;
     }
 
-    .info__title{
+    .home__title span {
         display: block;
-        margin-bottom: 4px;
     }
 
-    .status__box{
-        padding: 15px 15px 25px 20px;
+    .home__description {
+        margin-block: 16px 24px;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    /* About */
+    .about__container {
+        row-gap: 30px;
+    }
+
+    .info__list {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__container {
+        row-gap: 30px;
+    }
+
+    .progress__circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .resume__item {
+        padding-left: 50px;
+    }
+
+    .resume__icon {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    /* Contact */
+    .contact__info {
+        grid-template-columns: 1fr;
+    }
+
+    .form__input-group {
+        grid-template-columns: 1fr;
+    }
+
+    .form__control {
+        padding: 10px 20px;
+    }
+
+    .textarea {
+        height: 120px;
+    }
+
+    /* Portfolio */
+    .portfolio__container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__img {
+        height: 250px;
+    }
+
+    .modal__close {
+        width: 40px;
+        height: 40px;
+        right: -5%;
+    }
+
+    .modal__img {
+        height: 250px;
     }
 }
 
-@media screen and (max-width: 350px){
-    .home__title span{
+@media screen and (max-width: 576px) {
+    /* Home */
+    .home {
+        padding: 30px 15px;
+    }
+
+    .home__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* About */
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stats__box {
+        padding: 15px;
+    }
+
+    .stats__title {
+        padding-left: 35px;
+        font-size: var(--smaller-font-size);
+    }
+
+    .stats__title::before {
+        width: 25px;
+    }
+
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+
+    .resume__item {
+        padding-left: 40px;
+    }
+
+    .resume__subtitle {
+        font-size: var(--normal-font-size);
+    }
+
+    /* Contact */
+    .contact__socials {
+        justify-content: center;
+    }
+
+    .contact__button-icon {
+        line-height: 50px;
+    }
+
+    /* Portfolio */
+    .portfolio__img {
+        height: 180px;
+    }
+
+    .portfolio__modal-contant {
+        padding: 15px;
+    }
+
+    .modal__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: 15px;
+    }
+
+    .modal__img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Home */
+    .home__img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home__content {
+        margin-block: auto;
+        text-align: center;
+    }
+
+    .home__title {
+        font-size: var(--h2-font-size);
+    }
+
+    .home__description {
+        text-align: center;
+        font-size: var(--small-font-size);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Home */
+    .home__title span {
         display: inline;
     }
 
-    .stats{
-        grid-template-columns: 1fr;
+    .home__title {
+        font-size: var(--h3-font-size);
+    }
+
+    /* About */
+    .stats__no {
+        font-size: var(--h2-font-size);
+    }
+
+    .resume__date {
+        font-size: var(--tiny-font-size);
+    }
+
+    .resume__subtitle span {
+        padding-left: 20px;
+    }
+
+    .resume__subtitle span::before {
+        left: 5px;
+        width: 8px;
+    }
+
+    /* Contact */
+    .contact__social-link {
+        width: 36px;
+        height: 36px;
+        line-height: 40px;
+    }
+
+    .form__control {
+        font-size: var(--smaller-font-size);
+    }
+
+    /* Portfolio */
+    .portfolio__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .modal__close {
+        width: 30px;
+        height: 30px;
     }
 }
