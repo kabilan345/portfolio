@@ -54,7 +54,7 @@ const Themes = () => {
 
     return (
         <div>
-          <div className={`${ShowSwitcher ? 'show-switcher' : ""} style__switcher`}>
+        <div className={`${ShowSwitcher ? 'show-switcher' : ""} style__switcher`}>
             <div className="style__switcher-toggler" 
             onClick={() => setShowSwitcher(!ShowSwitcher)}>
                 <FaCog />

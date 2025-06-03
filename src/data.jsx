@@ -1,6 +1,7 @@
 import {
   FaHome,
   FaUser,
+  FaGithub,
   FaFolderOpen,
   FaEnvelopeOpen,
   FaBriefcase,
@@ -14,8 +15,7 @@ import Work2 from './assets/project-2.png';
 import Work3 from './assets/project-3.png';
 import Work4 from './assets/project-4.png';
 import Work5 from './assets/project-5.png';
-import Work6 from './assets/project-6.png';
-import Work7 from './assets/project-7.jpg';
+import Work6 from './assets/project-6.jpg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -256,6 +256,40 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
+    title: 'Deepfake Video Detection',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Ai Modal Using Deeplearning',
+      },
+      // {
+      //   icon: <FiUser />,
+      //   title: 'Client : ',
+      //   desc: 'Dribble',
+      // },
+      {
+        icon: <FaCode />,
+        title: 'Technology : ',
+        desc: 'Ai Modal, Reactjs, css, Flask, Firebase database',
+      },
+      // {
+      //   icon: <FiExternalLink />,
+      //   title: 'Preview : ',
+      //   desc: 'https://kabil-shoes.vercel.app/',
+      //   preview: true  // ✅ Add this
+      // },
+      {
+      icon: <FaGithub />,
+      title: 'GitHub : ',
+      desc: 'https://github.com/kabilan345/Deepfake_detection',
+      github: true  // ✅ Add a flag to identify it's the GitHub link
+      },
+    ],
+  },
+  {
+    id: 2,
+    img: Work2,
     title: 'E-commerce Website',
     details: [
       {
@@ -271,19 +305,26 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Reactjs, Tailwind css, Firebse console, Firebase database',
+        desc: 'Reactjs, Tailwind css, Firebase database',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: 'https://kabil-shoes.vercel.app/',
+        preview: true  // ✅ Add this
+      },
+      {
+      icon: <FaGithub />,
+      title: 'GitHub : ',
+      desc: 'https://github.com/kabilan345/kabil_shoes',
+      github: true  // ✅ Add a flag to identify it's the GitHub link
       },
     ],
   },
 
   {
-    id: 2,
-    img: Work2,
+    id: 3,
+    img: Work3,
     title: 'BookSky App',
     details: [
       {
@@ -305,13 +346,20 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: 'https://booksky-silk.vercel.app/',
+        preview: true  // ✅ Add this
       },
+      {
+      icon: <FaGithub />,
+      title: 'GitHub : ',
+      desc: 'https://github.com/kabilan345/booksky',
+      github: true  // ✅ Add a flag to identify it's the GitHub link
+    }
     ],
   },
 
   {
-    id: 3,
-    img: Work3,
+    id: 4,
+    img: Work4,
     title: 'Login Page',
     details: [
       {
@@ -338,64 +386,8 @@ export const portfolio = [
   },
 
   {
-    id: 4,
-    img: Work4,
-    title: 'Portfolio website',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'frontend',
-      },
-      // {
-      //   icon: <FiUser />,
-      //   title: 'Client : ',
-      //   desc: 'Dribble',
-      // },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Next.js,Tailwind.Css',
-      },
-      // {
-      //   icon: <FiExternalLink />,
-      //   title: 'Preview : ',
-      //   desc: 'www.dribble.com',
-      // },
-    ],
-  },
-
-  {
     id: 5,
     img: Work5,
-    title: 'Portfolio website',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'FrontEnd',
-      },
-      // {
-      //   icon: <FiUser />,
-      //   title: 'Client : ',
-      //   desc: 'Dribble',
-      // },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Html,Css,Js',
-      },
-      // {
-      //   icon: <FiExternalLink />,
-      //   title: 'Preview : ',
-      //   desc: 'www.dribble.com',
-      // },
-    ],
-  },
-
-  {
-    id: 6,
-    img: Work6,
     title: 'Netflix clone app',
     details: [
       {
@@ -418,8 +410,8 @@ export const portfolio = [
   },
 
   {
-    id: 7,
-    img: Work7,
+    id: 6,
+    img: Work6,
     title: 'airpodes design',
     details: [
       {

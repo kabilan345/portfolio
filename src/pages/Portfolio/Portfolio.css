@@ -110,3 +110,23 @@
     height: 350px;
     object-fit: cover;
 }
+
+.github__btn {
+    background-color: var(--first-color-alt);
+    color: var(--text-white);
+    border: 2px solid var(--first-color); /* visible border */
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--small-font-size);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.github__btn:hover {
+    background-color: var(--first-color);
+    transform: scale(1.1);
+}
